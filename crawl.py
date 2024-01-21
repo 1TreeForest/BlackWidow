@@ -24,6 +24,9 @@ WebDriver.add_script = add_script
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--disable-web-security")
 chrome_options.add_argument("--disable-xss-auditor")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+
 
 # launch Chrome
 driver = webdriver.Chrome(chrome_options = chrome_options)
